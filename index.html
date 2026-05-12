@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hello from GitHub Pages</title>
+    <meta name="description" content="A small static page hosted on GitHub Pages." />
+    <link rel="icon" href="data:," />
+    <style>
+      :root {
+        color-scheme: light dark;
+        --max-width: 720px;
+        --fg: #1a1a1a;
+        --bg: #ffffff;
+        --muted: #5b6470;
+        --accent: #2563eb;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --fg: #e6e6e6;
+          --bg: #0f1115;
+          --muted: #97a0aa;
+          --accent: #7aa7ff;
+        }
+      }
+      * { box-sizing: border-box; }
+      html, body { margin: 0; padding: 0; }
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        line-height: 1.55;
+        color: var(--fg);
+        background: var(--bg);
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+      header {
+        padding: 1.5rem 1.25rem;
+        border-bottom: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      }
+      header .wrap, main .wrap, footer .wrap {
+        max-width: var(--max-width);
+        margin: 0 auto;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 1.4rem;
+        letter-spacing: -0.01em;
+      }
+      header p {
+        margin: 0.25rem 0 0;
+        color: var(--muted);
+        font-size: 0.95rem;
+      }
+      main {
+        flex: 1;
+        padding: 2rem 1.25rem;
+      }
+      main h2 {
+        margin-top: 0;
+        font-size: 1.15rem;
+      }
+      a { color: var(--accent); text-underline-offset: 2px; }
+      footer {
+        padding: 1rem 1.25rem;
+        font-size: 0.85rem;
+        color: var(--muted);
+        border-top: 1px solid color-mix(in srgb, var(--fg) 12%, transparent);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap">
+        <h1>Your page title</h1>
+        <p>Hosted on GitHub Pages.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="wrap">
+        <h2>Hello, world.</h2>
+        <p>
+          Replace this text with whatever you want to publish. You can add more
+          sections, images, links, or scripts below — anything that works in a
+          browser will work here.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © <span id="year"></span> — Built with plain HTML.
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
